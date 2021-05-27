@@ -1,19 +1,64 @@
-﻿<html>
+<!DOCTYPE html>
+<html>
 <head>
-<title>page 7 </title>
+<title>paxonidis </title>
 </head>
-<body background="sunset.jpg">
-<font style="font-family:verdana;">
-<font color="ff 00 00">Colored text</font><br>
-<font size=2>The font size is 2 </font><br>
-<font size=7>The font size is 7 </font><br></font>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-<font color="ff ff 00">Left aligned text<br>
-<center>Center aligned text</center><br>
-<div align=right>Right aligned text</div><br></font>
+<body>
 
-<font size=5><u>Underlined text</u>
-<br><b>Bolded text</b><br>
-<em>Emphasized text </em></font> <br>
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#madclip" class="w3-button w3-bar-item">Madclip</a>
+ 
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="IMG_20210525_232336.jpg"
+  style="width:100%">
+  <img class="mySlides" src="IMG_20210525_232520.jpg"
+  style="width:100%">
+</section>
+
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">O MADCLIP</h2>
+  <p class="w3-opacity"><i>thimomenos sindetiras</i></p>
+  <p class="w3-justify">O MadClip einai idea , einai thriskia.</p>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a  target="_blank">Mad Clip</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
 </body>
 </html>
